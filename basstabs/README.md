@@ -1,13 +1,30 @@
-# Bass Tab Generator (Personal Use)
+# Bass Tab Generator
 
-This folder has prompts that help Claude create bass tabs for songs. When you run Claude Code here, it'll look up songs online and write out the bass lines in tab format for 5-string bass. You'll get two versions - one that matches the original and another with Claude's own take on it. Just for personal practice and learning.
+Generates bass tablature for songs by looking them up online and transcribing them for 5-string bass (B-E-A-D-G tuning). Creates two versions: original transcription and a creative interpretation.
 
-## Example Usage
+## Usage
 
 ```bash
 claude -p "create bass tab for [Song Name] by [Artist]"
 ```
 
-You'll get two files:
-- `artist_songname.txt` - The original bass line as played
-- `artist_songname_claude.txt` - Claude's version with some creative ideas
+## Output
+
+Two text files:
+- `artist_songname.txt` - Original bass line transcription
+- `artist_songname_claude.txt` - Creative interpretation
+
+## Key Features
+
+- **Original key transcription**: All tabs show actual fret positions in the song's original recorded key
+- **No capo notation**: If source material uses capo, tabs are automatically transposed to show real fret positions
+- **5-string bass format**: Standard B-E-A-D-G tuning
+- **Complete song structure**: From intro to outro with all sections labeled
+
+## File Structure
+
+Each file includes:
+
+1. **Header**: Artist info, song details, bass player profile
+2. **Chord Progression Overview**: Quick reference with chord changes
+3. **Detailed Bass Tablature**: Full note-by-note transcription with techniques (slides, hammer-ons, etc.)
