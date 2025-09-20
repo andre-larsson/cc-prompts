@@ -1,15 +1,17 @@
 # Bass Tabs and Chord Progression Generator
 
-This project generates complete bass tabs and chord progressions for full songs from intro to end, formatted for easy playback.
+This project creates bass tablature transcriptions and chord progressions for existing songs, from intro to end, formatted for easy playback.
 
-## Song Structure
+## Common Song Structure Elements
 
-Each generated song includes:
+Transcribed songs may include various sections such as:
 - **Intro** - Opening section to establish the key and feel
 - **Verse** - Main melodic content (typically 8-16 bars)
 - **Chorus** - Hook section with memorable progression
 - **Bridge** - Contrasting section for variety
 - **Outro** - Ending section to conclude the song
+
+(Note: Actual song structure will match the original recording being transcribed)
 
 ## Output Formats
 
@@ -62,7 +64,7 @@ B|---------------------|---------------------|
 
 ### Bass Tab Guidelines
 - **Always use 5-string bass tablature format (B-E-A-D-G tuning) for all songs by default**
-- String names are labeled on the left (B-E-A-D-G from low to high pitch)
+- String names are labeled on the left (B-E-A-D-G where B is the lowest pitch and G is the highest)
 - Numbers on lines represent fret positions (0 = open string)
 - Include fret numbers on appropriate strings
 - Focus on clear fret positions and chord labels
@@ -76,11 +78,11 @@ B|---------------------|---------------------|
 - Use monospace fonts to ensure proper alignment of ASCII characters
 - Place chord labels clearly below tablature sections
 - Use consistent spacing and dashes for visual clarity
-- **Do not include beat numbers (1 2 3 4) in detailed bass tablature sections**
+- **Do not include beat count numbers (1 2 3 4) above or below the tablature lines**
 
 ### Chord Progression Guidelines
 - Use bar lines (|) to separate measures
-- Do not include beat numbers in bass tablature
+- Do not include beat count numbers above/below tablature lines
 - Specify tempo, key, and time signature
 - Show chord extensions (maj7, m7, sus4, etc.) when appropriate
 - **Always include slash chords when bass note differs from chord root** (e.g., Am/G, C/E, D/F#)
@@ -147,7 +149,7 @@ When asked to create bass tablature for any song, follow this standard workflow:
 
 4. **Review and Quality Check**
    - Verify tablature formatting and alignment
-   - Check rhythm notation matches fret positions
+   - Check tablature alignment and fret positions
    - Ensure measure boundaries align across all strings
    - Confirm all sections are properly labeled
    - Make any musical corrections in the .txt file
@@ -297,7 +299,7 @@ SECTION 2: DETAILED BASS TABLATURE
 ### Quality Assurance
 Before saving files:
 - Verify pure tablature content and alignment
-- Check that rhythm notation matches fret positions
+- Check that all fret positions are properly aligned
 - Ensure measure boundaries align across all strings
 - Test display in common text editors (Notepad++, VS Code, TextEdit)
 - Confirm monospace font requirement is clearly stated
@@ -306,8 +308,9 @@ Before saving files:
 ## Rhythm and Timing
 
 - Use | for measure boundaries
-- Use subdivisions (e + a) for 16th note timing
-- Include tempo markings and feel descriptions (swing, straight, shuffle)
+- For chord progressions: Include tempo markings and feel descriptions (swing, straight, shuffle)
+- For detailed tablature: Focus on fret positions and timing through spacing, not beat numbers
+- Rhythm subdivisions can be indicated in separate performance notes if needed
 
 ## Key and Scale Information
 
@@ -321,7 +324,7 @@ Always specify:
 
 ### Standard Bass Tablature Layout
 Bass tablature uses a modified version of guitar tablature with 5 strings:
-- String names are written on the left (B-E-A-D-G from low to high pitch)
+- String names are written on the left (B-E-A-D-G where B is the lowest pitch and G is the highest)
 - Lines represent strings, not frets
 - Numbers on lines indicate which fret to press
 - Number 0 represents an open string (nut)

@@ -1,21 +1,21 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Instructions for Claude Code when working in this repo.
 
-## Repository Purpose
+## What's in this repo
 
-This repository stores Claude Code prompts for various tasks for personal use. Each subdirectory contains specialized prompts and instructions for different use cases.
+Just my personal Claude Code prompts for different projects. Each folder has its own thing going on.
 
-## Working with Subdirectories
+## How it works
 
-Each subdirectory contains its own `CLAUDE.md` file with task-specific instructions. To work on a particular task:
+Each folder has its own `CLAUDE.md` with instructions for that specific task. Just:
 
-1. Start a Claude Code instance in the relevant subdirectory
-2. The local `CLAUDE.md` will provide detailed instructions for that specific task
-3. Helper files and resources needed for the task are included in each subdirectory
+1. Start Claude Code in the folder you want
+2. The local `CLAUDE.md` tells Claude what to do
+3. Any needed files are already in that folder
 
-## Current Projects
+## Current stuff
 
-- `basstabs/` - Bass tablature generation with detailed formatting instructions
+- `basstabs/` - Makes bass tabs for songs
 
-Check individual directories for more information about each project.
+Look in each folder for more info.
