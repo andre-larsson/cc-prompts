@@ -1,3 +1,7 @@
 # Ignore generated tablature results
 result/
+# Allow sample files
+!SAMPLE_OUTPUT_DEMO.txt
+!SAMPLE_OUTPUT_DEMO_claude.txt
+# Ignore all other txt files
 *.txt

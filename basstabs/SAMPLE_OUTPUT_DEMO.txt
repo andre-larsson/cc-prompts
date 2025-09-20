@@ -1,0 +1,194 @@
+================================================================================
+BASS TABLATURE - SAMPLE DEMONSTRATION
+================================================================================
+Artist: The Sample Band
+Song: Demo Song
+Album: Example Album
+Year: 2025
+Musicians: Session musicians
+Bass Player: Demo Bassist
+Producer: Example Producer
+Label: Sample Records
+
+SONG INFORMATION:
+Style: Pop/Rock
+Tuning: Standard 5-string (B-E-A-D-G)
+Tempo: 120 BPM
+Key: C Major
+Time Signature: 4/4
+Song Length: 2:30 (demo version)
+
+SONG ANALYSIS:
+This is a demonstration file showing the standard format for bass tablature transcriptions.
+The song features a simple I-V-vi-IV progression common in popular music. The bass line
+follows root notes with occasional passing tones, demonstrating basic tablature notation
+and formatting conventions. This example shows how measure boundaries, chord labels, and
+fret positions are displayed in the transcription format.
+
+BASS PLAYER PROFILE:
+This section would normally contain biographical information about the bass player,
+including their musical background, notable recordings, playing style, and contributions
+to the music industry. For this demonstration, we're using fictional placeholder text
+to show the expected format and length of this section.
+
+SOURCES AND REFERENCES:
+**Primary Sources:**
+- Demonstration purposes only
+- No actual sources referenced
+
+**Research Notes:**
+- This is a sample file for format demonstration
+- Shows standard tablature layout and conventions
+- Fictional content for copyright-free example
+
+IMPORTANT DISPLAY NOTES:
+- View this file in a monospace font (Courier New, Consolas, Monaco, etc.)
+- Ensure font size allows proper character alignment
+- Disable text wrapping for best results
+- Tab characters may need adjustment based on your text editor
+
+LEGEND:
+| = measure boundary
+0 = open string
+h = hammer on
+p = pull off
+/ = slide up
+\ = slide down
+~ = vibrato
+PM = palm mute
+
+================================================================================
+SECTION 1: CHORD PROGRESSION OVERVIEW
+================================================================================
+
+INTRO (4 bars):
+| C     | C     | G     | G     |
+
+VERSE (8 bars):
+| C     | C     | G     | G     |
+| Am    | Am    | F     | F     |
+
+CHORUS (8 bars):
+| C     | G     | Am    | F     |
+| C     | G     | F     | F     |
+
+BRIDGE (4 bars):
+| Am    | F     | C     | G     |
+
+OUTRO (4 bars):
+| C     | G     | F     | C     |
+
+================================================================================
+SECTION 2: DETAILED BASS TABLATURE
+================================================================================
+
+INTRO:
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--3---3---3---3------|--3---3---3---3------|
+E|---------------------|---------------------|
+B|---------------------|---------------------|
+  C                     C
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|---------------------|---------------------|
+E|--3---3---3---3------|--3---3---3---3------|
+B|---------------------|---------------------|
+  G                     G
+
+VERSE:
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--3---3---3---3------|--3---3---3---3------|
+E|---------------------|---------------------|
+B|---------------------|---------------------|
+  C                     C
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|---------------------|---------------------|
+E|--3---3---3---3------|--3---3---3---3------|
+B|---------------------|---------------------|
+  G                     G
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--0---0---0---0------|--0---0---0---0------|
+E|---------------------|---------------------|
+B|---------------------|---------------------|
+  Am                    Am
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|---------------------|---------------------|
+E|--1---1---1---1------|--1---1---1---1------|
+B|---------------------|---------------------|
+  F                     F
+
+CHORUS:
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--3---3---3---3------|---------------------|
+E|---------------------|--3---3---3---3------|
+B|---------------------|---------------------|
+  C                     G
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--0---0---0---0------|---------------------|
+E|---------------------|--1---1---1---1------|
+B|---------------------|---------------------|
+  Am                    F
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--3---3---3---3------|---------------------|
+E|---------------------|--3---3---3---3------|
+B|---------------------|---------------------|
+  C                     G
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|---------------------|---------------------|
+E|--1---1---1---1------|--1---1---1---1------|
+B|---------------------|---------------------|
+  F                     F
+
+BRIDGE:
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--0---0---0---0------|---------------------|
+E|---------------------|--1---1---1---1------|
+B|---------------------|---------------------|
+  Am                    F
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--3---3---3---3------|---------------------|
+E|---------------------|--3---3---3---3------|
+B|---------------------|---------------------|
+  C                     G
+
+OUTRO:
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|--3---3---3---3------|---------------------|
+E|---------------------|--3---3---3---3------|
+B|---------------------|---------------------|
+  C                     G
+
+G|---------------------|---------------------|
+D|---------------------|---------------------|
+A|---------------------|--3------------------|
+E|--1---1---1---1------|---------------------|
+B|---------------------|---------------------|
+  F                     C
+
+================================================================================
+Performance Notes:
+- Simple root note pattern for demonstration
+- Quarter note rhythm throughout
+- Focus on clean, consistent timing
+- This is a basic example of tablature formatting
+================================================================================
