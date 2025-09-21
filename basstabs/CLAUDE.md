@@ -2,16 +2,9 @@
 
 This project creates bass tablature transcriptions and chord progressions for existing songs, from intro to end, formatted for easy playback.
 
-## Common Song Structure Elements
+## Song Structure
 
-Transcribed songs may include various sections such as:
-- **Intro** - Opening section to establish the key and feel
-- **Verse** - Main melodic content (typically 8-16 bars)
-- **Chorus** - Hook section with memorable progression
-- **Bridge** - Contrasting section for variety
-- **Outro** - Ending section to conclude the song
-
-(Note: Actual song structure will match the original recording being transcribed)
+Transcriptions follow the actual arrangement of the original recording, which may include sections like INTRO, VERSE, PRE-CHORUS, CHORUS, BRIDGE, SOLO, BREAKDOWN, OUTRO/CODA, and INTERLUDE. Structure varies by song and artist.
 
 ## Output Formats
 
@@ -89,30 +82,6 @@ B|---------------------|---------------------|
 - Use slash chord notation to accurately reflect the actual bass line being played
 - Example: If playing Am chord but bass plays G note, write as Am/G
 
-### Song Structure Guidelines
-
-Generated tablature is for existing and famous songs, meaning the song structure will follow the actual arrangement of the specific song being transcribed. Structure varies significantly between songs and artists.
-
-**Key principles:**
-- Accurately reflect the original song's arrangement
-- Include all sections present in the recorded version
-- Label each section clearly (INTRO, VERSE, CHORUS, BRIDGE, SOLO, OUTRO, etc.)
-- Note any repeats, variations, or unique structural elements
-- Include bar counts for each section
-- Account for any instrumental breaks, solos, or extended sections
-
-**Common section types found in popular songs:**
-- **INTRO** - Opening instrumental section
-- **VERSE** - Main narrative sections (often multiple verses)
-- **PRE-CHORUS** - Transitional section building to chorus
-- **CHORUS** - Main hook/memorable section (often repeated)
-- **BRIDGE** - Contrasting section providing variety
-- **SOLO** - Instrumental solo sections
-- **BREAKDOWN** - Stripped-down sections
-- **OUTRO/CODA** - Closing section
-- **INTERLUDE** - Instrumental connecting sections
-
-The exact structure, section lengths, and arrangement will match the original recording being transcribed.
 
 ## Standard Workflow
 
@@ -123,9 +92,36 @@ When asked to create bass tablature for any song, follow this standard workflow:
 1. **Internet Research**
    - Search for existing bass tablature online
    - Review multiple sources (Ultimate Guitar, Songsterr, etc.)
+   - Identify the most popular/highest-rated version
+   - Note any playing instructions, techniques, or performance notes from these sources
    - Cross-reference different versions for accuracy
    - Research the bass player's background and discography
    - Look for information about their other recordings and collaborations
+
+   **Converting Informal ASCII Tabs:**
+   When you find high-quality tabs in informal formats (like user-submitted ASCII tabs), convert them to our structured format:
+   - Extract the musical content (fret numbers, techniques, timing)
+   - Determine the chord progression from the bass notes
+   - Convert to 5-string bass format (B-E-A-D-G) if needed
+   - Expand shortened notation (e.g., "repeat main riff" becomes full tablature)
+   - Add measure bars based on time signature (every 21 characters for 4/4)
+   - Include chord labels below each measure
+   - Preserve special techniques (slides /, bends b, hammer-ons h, etc.)
+   - Credit the original transcriber in the sources section
+
+   Example conversion:
+   ```
+   Original informal tab:
+   A |-------3-5--5-5--5-3-2-0-------0-2-3--3-3--3-5---
+
+   Converted to our format:
+   G|---------------------|---------------------|---------------------|---------------------|
+   D|---------------------|---------------------|---------------------|---------------------|
+   A|-------3-5--5-5------|--5-3-2-0------------|-------0-2-3--3-3----|--3-5----------------|
+   E|---------------------|---------------------|---------------------|---------------------|
+   B|---------------------|---------------------|---------------------|---------------------|
+     C                     Am                    F                     G
+   ```
 
 2. **Analysis and Transposition**
    - Identify the original recorded key
@@ -136,15 +132,12 @@ When asked to create bass tablature for any song, follow this standard workflow:
    - Update key signature to reflect actual recorded pitch (not capo key)
    - Normalise tablature to the standard 5-string bass tuning (B-E-A-D-G)
 
-3. **Generate Tablature**
-   - Start with simple chord progression overview for entire song
-   - Then create detailed bass tablature with specific fret positions
-   - **Use 4-bar layout**: Group tablature into 4-measure lines (84 characters wide = 4 measures × 21 characters each)
-   - Include chord progressions with proper timing
-   - Follow song structure from original recording
-   - Apply all formatting standards (monospace, alignment, etc.)
-   - Ensure each measure is exactly 21 characters wide for optimal display
-   - Focus solely on musical accuracy and alignment
+3. **Generate Original Transcription**
+   - **CRITICAL: Accurately transcribe the EXACT bass patterns from popular online tabs - including ALL octave jumps, chromatic runs, fills, and rhythmic variations. Simple quarter-note root patterns are ONLY acceptable if that's what the source tabs actually show.**
+   - Preserve all playing techniques, fingering positions, and performance notes from source tabs
+   - Start with chord progression overview, then create detailed bass tablature
+   - **Use 4-bar layout**: 84 characters wide (4 measures × 21 characters each)
+   - Follow original song structure and apply formatting standards
    - Save as `artist_songname.txt`
 
 4. **Review and Quality Check**
@@ -168,14 +161,6 @@ When asked to create bass tablature for any song, follow this standard workflow:
    - Include different approaches: walking bass, melodic counterpoint, rhythmic variations
    - Maintain the original chord progression but explore creative bass movement
 
-### Workflow Expectations
-
-**By default, every tablature request should:**
-- Follow the 5-step workflow above
-- Present music in original recorded key (no capo)
-- Generate plain text .txt file (pure tablature)
-- Create Claude interpretation version (.txt)
-- Review the output from each step and fix any issues before continuing to ensure accuracy
 
 ## File Naming Convention
 
@@ -191,71 +176,14 @@ artist_songname_claude.txt   (creative interpretation)
 To ensure proper display and formatting of generated tablature files:
 
 ### File Header Template
-Every generated .txt file should start with this header:
-```
-================================================================================
-BASS TABLATURE
-================================================================================
-Artist: [Artist Name]
-Song: [Song Title]
-Album: [Album Name] (or "Not available" if unknown)
-Year: [Release Year] (or "Not available" if unknown)
-Musicians: [Band members/session musicians] (or "Not available" if unknown)
-Bass Player: [Bass player name] (or "Not available" if unknown)
-Producer: [Producer name] (or "Not available" if unknown)
-Label: [Record label] (or "Not available" if unknown)
-
-SONG INFORMATION:
-Style: [Genre/Musical style]
-Tuning: Standard 5-string (B-E-A-D-G)
-Tempo: [BPM] (or "Not available" if unknown)
-Key: [Key Signature]
-Time Signature: [Time Sig]
-Song Length: [Duration] (or "Not available" if unknown)
-
-SONG ANALYSIS:
-[Brief description of the song's musical characteristics, bass playing style,
-notable techniques used, and any interesting musical elements. Discuss the
-bass line's role in the song, whether it's melodic, rhythmic, or supportive.
-Mention any distinctive features or challenges for players.]
-
-BASS PLAYER PROFILE:
-[Research the bass player and write approximately one paragraph about their
-musical background. Include information about other notable records they've
-played on, collaborations with other artists, whether they play other instruments,
-their signature playing style, influences, and any other interesting biographical
-or musical information. Mention their role in the band/session and how their
-playing style contributes to this particular song. If bass player information
-is not available, write "Bass player information not available."]
-
-SOURCES AND REFERENCES:
-**Primary Sources:**
-- Source Name: Description of what was obtained
-  URL: [URL if applicable]
-
-**Research Notes:**
-- Key findings and verification details
-- Any conflicting information and resolution
-- Musician credits with source verification
-
-IMPORTANT DISPLAY NOTES:
-- View this file in a monospace font (Courier New, Consolas, Monaco, etc.)
-- Ensure font size allows proper character alignment
-- Disable text wrapping for best results
-- Tab characters may need adjustment based on your text editor
-
-LEGEND:
-| = measure boundary
-0 = open string
-h = hammer on
-p = pull off
-/ = slide up
-\ = slide down
-~ = vibrato
-PM = palm mute
-
-================================================================================
-```
+Every generated .txt file should start with this comprehensive header containing:
+- **Metadata**: Artist, Song, Album, Year, Musicians, Bass Player, Producer, Label
+- **Song Information**: Style, Tuning (Standard 5-string B-E-A-D-G), Tempo, Key, Time Signature, Length
+- **Song Analysis**: Brief description of musical characteristics, bass playing style, and notable techniques
+- **Bass Player Profile**: One paragraph about their musical background, other recordings, and playing style
+- **Sources**: Primary sources, research notes, and original transcriber credit
+- **Display Notes**: Must be viewed in monospace font (Courier New, Consolas, Monaco, etc.)
+- **Legend**: | = measure boundary, 0 = open string, h = hammer on, p = pull off, / = slide up, \ = slide down, ~ = vibrato, PM = palm mute
 
 ### Tablature Structure Format
 
@@ -273,36 +201,15 @@ Each .txt file should contain these two main sections:
 - Includes all techniques (slides, hammer-ons, etc.)
 - Follows complete song structure from beginning to end
 
-Example structure:
-```
-================================================================================
-SECTION 1: CHORD PROGRESSION OVERVIEW
-================================================================================
-[Chord progression content here]
-
-================================================================================
-SECTION 2: DETAILED BASS TABLATURE
-================================================================================
-[Full bass tablature content here]
-```
 
 ### Formatting Guidelines
-
-**For .txt files:**
-- Use UTF-8 encoding to ensure compatibility
+- Use UTF-8 encoding and monospace fonts
 - Include clear section separators (===== lines)
-- Add blank lines between song sections for readability
-- Use consistent indentation for chord progressions
-- Include measure numbers every 4-8 bars for navigation
-- Add performance notes and tempo changes where relevant
-
-### Quality Assurance
-Before saving files:
-- Verify pure tablature content and alignment
-- Check that all fret positions are properly aligned
-- Ensure measure boundaries align across all strings
-- Test display in common text editors (Notepad++, VS Code, TextEdit)
-- Confirm monospace font requirement is clearly stated
+- Add blank lines between song sections
+- Use consistent indentation and alignment
+- Verify all fret positions align across strings
+- Ensure measure boundaries align properly
+- Test display in common text editors
 
 
 ## Rhythm and Timing
@@ -311,6 +218,25 @@ Before saving files:
 - For chord progressions: Include tempo markings and feel descriptions (swing, straight, shuffle)
 - For detailed tablature: Focus on fret positions and timing through spacing, not beat numbers
 - Rhythm subdivisions can be indicated in separate performance notes if needed
+
+## Repeat Notation
+
+To keep tablature files concise while maintaining clarity, use repeat notation for repeated sections. This applies to both Section 1 (Chord Progression Overview) and Section 2 (Detailed Bass Tablature).
+
+### Notation Guidelines
+- **Identical repeats**: Use `[Repeat Section_Name pattern]` when a section is played exactly the same
+- **Repeats with count**: Use `[Play 2x]` or `[Play 4x]` above a section that should be repeated
+- **Variations**: Use `[Same as Section_Name with variations on measures X-Y]` when mostly similar
+- **First/second endings**: Number endings as `|1.` and `|2.` for different endings on repeats
+
+
+### When to Use Repeat Notation
+- Apply to both Section 1 (chord progressions) and Section 2 (detailed tablature)
+- Use for verses, choruses, or other sections that repeat identically
+- Use for instrumental sections that mirror vocal sections
+- Always write out the first occurrence in full
+- Write out any section with significant variations
+- For creative interpretations (Claude versions), write out more sections to show variations
 
 ## Key and Scale Information
 
@@ -330,59 +256,11 @@ Bass tablature uses a modified version of guitar tablature with 5 strings:
 - Number 0 represents an open string (nut)
 - This document uses pitch order convention (highest pitch string at top)
 
-### ASCII Alignment Guidelines
-To ensure proper tablature display:
-- Use monospace fonts (Courier New, Consolas, Monaco, etc.)
-- Maintain consistent character spacing throughout
-- Align vertical elements (bar lines, rhythm notation) precisely
-- Use hyphens (-) for empty fret positions
-- Use pipe symbols (|) for string lines and measure boundaries
-- Ensure rhythm notation aligns directly under corresponding tab positions
-- Test display in multiple monospace environments
-- Use consistent spacing between sections and measures
-
 ### Tablature Symbols
 
-Tablature uses various symbols to denote playing techniques. Common symbols include:
-
-### Playing Techniques
-| Symbol | Technique |
-|--------|-----------|
-| h | hammer on |
-| p | pull off |
-| b | bend string up |
-| r | release bend |
-| / | slide up |
-| \ | slide down |
-| v | vibrato (sometimes written as ~) |
-| t | right hand tap |
-| s | legato slide |
-| S | shift slide |
-| * | natural harmonic |
-| [n] | artificial harmonic |
-| n(n) | tapped harmonic |
-| tr | trill |
-| T | tap |
-| TP | tremolo picking |
-| PM | palm muting (also written as _ and .) |
-| N.C. | No chord: tacet or rest |
-| \n/ | tremolo arm dip; n = amount to dip |
-| \n | tremolo arm down |
-| n/ | tremolo arm up |
-| /n\ | tremolo arm inverted dip |
-| = | hold bend; also acts as connecting device for hammers/pulls |
-| <> | volume swell (louder/softer) |
-| x | on rhythm slash represents muted slash |
-| o | on rhythm slash represents single note slash |
-| ·/. | pick slide |
-
-### Note Length Symbols
-| Symbol | Note Length |
-|--------|-------------|
-| W | Whole note/semibreve |
-| H | Half note/minim |
-| Q | Quarter note/crotchet |
-| E | Eighth note/quaver |
-| a | Acciaccatura |
-| - | Note tied to previous |
-| . | Note dotted |
+**Essential Playing Techniques:**
+- h = hammer on, p = pull off, / = slide up, \ = slide down
+- ~ or v = vibrato, b = bend string up, r = release bend
+- PM = palm mute, * = natural harmonic, x = muted note
+- t = tap, s = legato slide, N.C. = No chord (rest)
+- Additional symbols preserved as found in source tabs
