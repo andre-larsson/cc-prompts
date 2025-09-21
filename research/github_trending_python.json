@@ -1,0 +1,222 @@
+[
+  {
+    "owner": "Alibaba-NLP",
+    "name": "DeepResearch",
+    "full_name": "Alibaba-NLP/DeepResearch",
+    "description": "Tongyi Deep Research, the Leading Open-source Deep Research Agent",
+    "language": "Python",
+    "stars": 0,
+    "forks": 876,
+    "stars_today": 4610,
+    "url": "https://github.com/Alibaba-NLP/DeepResearch"
+  },
+  {
+    "owner": "microsoft",
+    "name": "markitdown",
+    "full_name": "microsoft/markitdown",
+    "description": "Python tool for converting files and office documents to Markdown.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 4363,
+    "stars_today": 6418,
+    "url": "https://github.com/microsoft/markitdown"
+  },
+  {
+    "owner": "CorentinJ",
+    "name": "Real-Time-Voice-Cloning",
+    "full_name": "CorentinJ/Real-Time-Voice-Cloning",
+    "description": "Clone a voice in 5 seconds to generate arbitrary speech in real-time",
+    "language": "Python",
+    "stars": 0,
+    "forks": 9222,
+    "stars_today": 1660,
+    "url": "https://github.com/CorentinJ/Real-Time-Voice-Cloning"
+  },
+  {
+    "owner": "sentient-agi",
+    "name": "ROMA",
+    "full_name": "sentient-agi/ROMA",
+    "description": "Recursive-Open-Meta-Agent v0.1 (Beta). A meta-agent framework to build high-performance multi-agent systems.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 403,
+    "stars_today": 1297,
+    "url": "https://github.com/sentient-agi/ROMA"
+  },
+  {
+    "owner": "dataease",
+    "name": "SQLBot",
+    "full_name": "dataease/SQLBot",
+    "description": "\ud83d\udd25 \u57fa\u4e8e\u5927\u6a21\u578b\u548c RAG \u7684\u667a\u80fd\u95ee\u6570\u7cfb\u7edf\u3002Text-to-SQL Generation via LLMs using RAG.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 279,
+    "stars_today": 1114,
+    "url": "https://github.com/dataease/SQLBot"
+  },
+  {
+    "owner": "virattt",
+    "name": "ai-hedge-fund",
+    "full_name": "virattt/ai-hedge-fund",
+    "description": "An AI Hedge Fund Team",
+    "language": "Python",
+    "stars": 0,
+    "forks": 7237,
+    "stars_today": 1178,
+    "url": "https://github.com/virattt/ai-hedge-fund"
+  },
+  {
+    "owner": "ml-explore",
+    "name": "mlx-lm",
+    "full_name": "ml-explore/mlx-lm",
+    "description": "Run LLMs with MLX",
+    "language": "Python",
+    "stars": 0,
+    "forks": 255,
+    "stars_today": 525,
+    "url": "https://github.com/ml-explore/mlx-lm"
+  },
+  {
+    "owner": "ccxt",
+    "name": "ccxt",
+    "full_name": "ccxt/ccxt",
+    "description": "A cryptocurrency trading API with more than 100 exchanges in JavaScript / TypeScript / Python / C# / PHP / Go",
+    "language": "Python",
+    "stars": 0,
+    "forks": 8221,
+    "stars_today": 856,
+    "url": "https://github.com/ccxt/ccxt"
+  },
+  {
+    "owner": "PaddlePaddle",
+    "name": "PaddleOCR",
+    "full_name": "PaddlePaddle/PaddleOCR",
+    "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 80+ languages.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 8699,
+    "stars_today": 1495,
+    "url": "https://github.com/PaddlePaddle/PaddleOCR"
+  },
+  {
+    "owner": "HKUDS",
+    "name": "AutoAgent",
+    "full_name": "HKUDS/AutoAgent",
+    "description": "\"AutoAgent: Fully-Automated and Zero-Code LLM Agent Framework\"",
+    "language": "Python",
+    "stars": 0,
+    "forks": 961,
+    "stars_today": 366,
+    "url": "https://github.com/HKUDS/AutoAgent"
+  },
+  {
+    "owner": "opengeos",
+    "name": "geoai",
+    "full_name": "opengeos/geoai",
+    "description": "GeoAI: Artificial Intelligence for Geospatial Data",
+    "language": "Python",
+    "stars": 0,
+    "forks": 194,
+    "stars_today": 154,
+    "url": "https://github.com/opengeos/geoai"
+  },
+  {
+    "owner": "unclecode",
+    "name": "crawl4ai",
+    "full_name": "unclecode/crawl4ai",
+    "description": "\ud83d\ude80\ud83e\udd16 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+    "language": "Python",
+    "stars": 0,
+    "forks": 5334,
+    "stars_today": 909,
+    "url": "https://github.com/unclecode/crawl4ai"
+  },
+  {
+    "owner": "NVIDIA",
+    "name": "garak",
+    "full_name": "NVIDIA/garak",
+    "description": "the LLM vulnerability scanner",
+    "language": "Python",
+    "stars": 0,
+    "forks": 628,
+    "stars_today": 417,
+    "url": "https://github.com/NVIDIA/garak"
+  },
+  {
+    "owner": "facebookresearch",
+    "name": "detectron2",
+    "full_name": "facebookresearch/detectron2",
+    "description": "Detectron2 is a platform for object detection, segmentation and other visual recognition tasks.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 7812,
+    "stars_today": 582,
+    "url": "https://github.com/facebookresearch/detectron2"
+  },
+  {
+    "owner": "google-research",
+    "name": "timesfm",
+    "full_name": "google-research/timesfm",
+    "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 543,
+    "stars_today": 640,
+    "url": "https://github.com/google-research/timesfm"
+  },
+  {
+    "owner": "Lightricks",
+    "name": "LTX-Video",
+    "full_name": "Lightricks/LTX-Video",
+    "description": "Official repository for LTX-Video",
+    "language": "Python",
+    "stars": 0,
+    "forks": 712,
+    "stars_today": 165,
+    "url": "https://github.com/Lightricks/LTX-Video"
+  },
+  {
+    "owner": "khoj-ai",
+    "name": "khoj",
+    "full_name": "khoj-ai/khoj",
+    "description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 1809,
+    "stars_today": 206,
+    "url": "https://github.com/khoj-ai/khoj"
+  },
+  {
+    "owner": "geekcomputers",
+    "name": "Python",
+    "full_name": "geekcomputers/Python",
+    "description": "My Python Examples",
+    "language": "Python",
+    "stars": 0,
+    "forks": 12753,
+    "stars_today": 80,
+    "url": "https://github.com/geekcomputers/Python"
+  },
+  {
+    "owner": "deepset-ai",
+    "name": "haystack",
+    "full_name": "deepset-ai/haystack",
+    "description": "AI orchestration framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data. With advanced retrieval methods, it's best suited for building RAG, question answering, semantic search or conversational agent chatbots.",
+    "language": "Python",
+    "stars": 0,
+    "forks": 2385,
+    "stars_today": 484,
+    "url": "https://github.com/deepset-ai/haystack"
+  },
+  {
+    "owner": "apache",
+    "name": "tvm",
+    "full_name": "apache/tvm",
+    "description": "Open deep learning compiler stack for cpu, gpu and specialized accelerators",
+    "language": "Python",
+    "stars": 0,
+    "forks": 3660,
+    "stars_today": 40,
+    "url": "https://github.com/apache/tvm"
+  }
+]

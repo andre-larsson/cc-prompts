@@ -1,0 +1,112 @@
+[
+  {
+    "id": "45319876",
+    "title": "Spectral Labs releases SGS-1: the first generative model for structured CAD",
+    "url": "https://www.spectrallabs.ai/research/SGS-1",
+    "domain": "www.spectrallabs.ai",
+    "points": 150,
+    "author": "JumpCrisscross",
+    "age": "2025-09-21T03:46:07 1758426367",
+    "comments": 19,
+    "hn_url": "https://news.ycombinator.com/item?id=45319876"
+  },
+  {
+    "id": "45319690",
+    "title": "iFixit iPhone Air teardown",
+    "url": "https://www.ifixit.com/News/113171/iphone-air-teardown",
+    "domain": "www.ifixit.com",
+    "points": 145,
+    "author": "zdw",
+    "age": "2025-09-21T03:09:47 1758424187",
+    "comments": 71,
+    "hn_url": "https://news.ycombinator.com/item?id=45319690"
+  },
+  {
+    "id": "45320759",
+    "title": "Universities should be more than toll gates",
+    "url": "https://www.waliddib.com/posts/universities-should-be-more-than-toll-gates/",
+    "domain": "www.waliddib.com",
+    "points": 42,
+    "author": "wdib",
+    "age": "2025-09-21T07:19:59 1758439199",
+    "comments": 23,
+    "hn_url": "https://news.ycombinator.com/item?id=45320759"
+  },
+  {
+    "id": "45312202",
+    "title": "Writing a competitive BZip2 encoder in Ada from scratch in a few days \u2013 part 3",
+    "url": "https://gautiersblog.blogspot.com/2025/09/writing-competitive-bzip2-encoder-in.html",
+    "domain": "gautiersblog.blogspot.com",
+    "points": 35,
+    "author": "etrez",
+    "age": "2025-09-20T10:55:53 1758365753",
+    "comments": 0,
+    "hn_url": "https://news.ycombinator.com/item?id=45312202"
+  },
+  {
+    "id": "45317527",
+    "title": "$2 WeAct Display FS adds a 0.96-inch USB information display to your computer",
+    "url": "https://www.cnx-software.com/2025/09/18/2-weact-display-fs-adds-a-0-96-inch-usb-information-display-to-your-computer/",
+    "domain": "www.cnx-software.com",
+    "points": 290,
+    "author": "smartmic",
+    "age": "2025-09-20T21:04:47 1758402287",
+    "comments": 131,
+    "hn_url": "https://news.ycombinator.com/item?id=45317527"
+  },
+  {
+    "id": "45314592",
+    "title": "Ultrasonic Chef's Knife",
+    "url": "https://seattleultrasonics.com/",
+    "domain": "seattleultrasonics.com",
+    "points": 602,
+    "author": "hemloc_io",
+    "age": "2025-09-20T16:12:56 1758384776",
+    "comments": 471,
+    "hn_url": "https://news.ycombinator.com/item?id=45314592"
+  },
+  {
+    "id": "45319399",
+    "title": "The bloat of edge-case first libraries",
+    "url": "https://43081j.com/2025/09/bloat-of-edge-case-libraries",
+    "domain": "43081j.com",
+    "points": 71,
+    "author": "PaulHoule",
+    "age": "2025-09-21T02:09:43 1758420583",
+    "comments": 82,
+    "hn_url": "https://news.ycombinator.com/item?id=45319399"
+  },
+  {
+    "id": "45319062",
+    "title": "AI was supposed to help juniors shine. why does it mostly make seniors stronger?",
+    "url": "https://elma.dev/notes/ai-makes-seniors-stronger/",
+    "domain": "elma.dev",
+    "points": 64,
+    "author": "elmsec",
+    "age": "2025-09-21T00:56:59 1758416219",
+    "comments": 78,
+    "hn_url": "https://news.ycombinator.com/item?id=45319062"
+  },
+  {
+    "id": "45289150",
+    "title": "Teardown of Apple 40W dynamic power adapter with 60W max",
+    "url": "https://www.chargerlab.com/teardown-of-apple-40w-dynamic-power-adapter-with-60w-max-a3365/",
+    "domain": "www.chargerlab.com",
+    "points": 150,
+    "author": "givinguflac",
+    "age": "2025-09-18T13:04:27 1758200667",
+    "comments": 114,
+    "hn_url": "https://news.ycombinator.com/item?id=45289150"
+  },
+  {
+    "id": "45320431",
+    "title": "Vibe coding cleanup as a service",
+    "url": "https://donado.co/en/articles/2025-09-16-vibe-coding-cleanup-as-a-service/",
+    "domain": "donado.co",
+    "points": 99,
+    "author": "sjdonado",
+    "age": "2025-09-21T06:01:49 1758434509",
+    "comments": 56,
+    "hn_url": "https://news.ycombinator.com/item?id=45320431"
+  }
+]

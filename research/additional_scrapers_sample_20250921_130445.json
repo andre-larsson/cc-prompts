@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-09-21T13:04:45.562617",
+  "devto_articles": [
+    {
+      "id": 2837888,
+      "title": "\ud83e\udde0How to use AI more efficiently for free (Serena MCP)\ud83e\uddd0",
+      "description": "Intro   Recently, I started using Claude Code (terminal type AI coding agent tool by...",
+      "url": "https://dev.to/webdeveloperhyper/how-to-use-ai-more-efficiently-for-free-serena-mcp-5gj6",
+      "canonical_url": "https://dev.to/webdeveloperhyper/how-to-use-ai-more-efficiently-for-free-serena-mcp-5gj6",
+      "author": "webdeveloperhyper",
+      "author_name": "Web Developer Hyper",
+      "tags": [
+        "ai",
+        "webdev",
+        "productivity",
+        "opensource"
+      ],
+      "published_at": "2025-09-20T02:52:32Z",
+      "created_at": "2025-09-11T00:24:16Z",
+      "reading_time_minutes": 10,
+      "positive_reactions": 20,
+      "comments_count": 2,
+      "scraped_at": "2025-09-21T13:04:42.491495"
+    },
+    {
+      "id": 2847610,
+      "title": "AI Coding Is Boring \u2014 And What To Do About It",
+      "description": "When I first tried AI coding, I was bored out of my mind. I\u2019d type in a prompt\u2026 and think \u2018guess I\u2019ll...",
+      "url": "https://dev.to/datadog-frontend-dev/ai-coding-is-boring-and-what-to-do-about-it-5bji",
+      "canonical_url": "https://dev.to/datadog-frontend-dev/ai-coding-is-boring-and-what-to-do-about-it-5bji",
+      "author": "sboudrias",
+      "author_name": "Simon Boudrias",
+      "tags": [
+        "vibecoding",
+        "ai",
+        "coding",
+        "productivity"
+      ],
+      "published_at": "2025-09-18T13:19:54Z",
+      "created_at": "2025-09-15T20:59:30Z",
+      "reading_time_minutes": 3,
+      "positive_reactions": 23,
+      "comments_count": 3,
+      "scraped_at": "2025-09-21T13:04:42.491539"
+    }
+  ],
+  "arxiv_papers": [
+    {
+      "id": "2306.07377v1",
+      "title": "Lost in Translation: Large Language Models in Non-English Content   Analysis",
+      "summary": "In recent years, large language models (e.g., Open AI's GPT-4, Meta's LLaMa,\nGoogle's PaLM) have become the dominant approach for building AI systems to\nanalyze and generate language online. However, the automated systems that\nincreasingly mediate our interactions online -- such as chatbots, content\nmoderation systems, and search engines -- are primarily designed for and work\nfar more effectively in English than in the world's other 7,000 languages.\nRecently, researchers and technology companies",
+      "authors": [
+        "Gabriel Nicholas",
+        "Aliya Bhatia"
+      ],
+      "published": "2023-06-12T19:10:47Z",
+      "updated": "2023-06-12T19:10:47Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "pdf_url": "http://arxiv.org/pdf/2306.07377v1",
+      "url": "http://arxiv.org/abs/2306.07377v1",
+      "scraped_at": "2025-09-21T13:04:43.208453"
+    },
+    {
+      "id": "2202.03371v1",
+      "title": "Cedille: A large autoregressive French language model",
+      "summary": "Scaling up the size and training of autoregressive language models has\nenabled novel ways of solving Natural Language Processing tasks using zero-shot\nand few-shot learning. While extreme-scale language models such as GPT-3 offer\nmultilingual capabilities, zero-shot learning for languages other than English\nremain largely unexplored. Here, we introduce Cedille, a large open source\nauto-regressive language model, specifically trained for the French language.\nOur results show that Cedille outperfo",
+      "authors": [
+        "Martin M\u00fcller",
+        "Florian Laurent"
+      ],
+      "published": "2022-02-07T17:40:43Z",
+      "updated": "2022-02-07T17:40:43Z",
+      "categories": [
+        "cs.CL",
+        "68T50",
+        "I.2.7"
+      ],
+      "pdf_url": "http://arxiv.org/pdf/2202.03371v1",
+      "url": "http://arxiv.org/abs/2202.03371v1",
+      "scraped_at": "2025-09-21T13:04:43.208753"
+    }
+  ],
+  "product_hunt": [],
+  "papers_with_code": [],
+  "lobsters_stories": []
+}
