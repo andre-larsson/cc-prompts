@@ -14,8 +14,4 @@ Each folder has its own `CLAUDE.md` with instructions for that specific task. Ju
 2. The local `CLAUDE.md` tells Claude what to do
 3. Any needed files are already in that folder
 
-## Current stuff
-
-- `basstabs/` - Makes bass tabs for songs
-
 Look in each folder for more info.

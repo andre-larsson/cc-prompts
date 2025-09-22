@@ -8,27 +8,13 @@ Just a repo with prompts for [Claude Code](https://claude.ai/code). Each folder 
 
 ## Structure
 
-```
-cc/
-├── basstabs/     # Bass guitar tablature generation
-└── ...           # Additional projects
-```
+Each folder contains a self-contained project with its own `CLAUDE.md` instructions.
 
 ## How to Use
 
 1. Go to the folder for what you want to do
 2. Run Claude Code there
 3. The `CLAUDE.md` file tells Claude what to do
-
-## Projects
-
-### Bass Tabs (`basstabs/`)
-Makes bass tabs for songs I want to learn:
-- Looks up tabs online
-- Outputs as text files
-- Creates alternate versions
-- 5-string bass format
-- Just for practice
 
 ---
 
