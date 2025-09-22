@@ -21,7 +21,7 @@ pip install -r requirements.txt
 export GITHUB_TOKEN="your_token_here"
 ```
 
-### Available Data Sources (17 Working Scrapers)
+### Available Data Sources (16 Working Scrapers)
 
 #### Core Sources
 - **Hacker News** - Tech news, discussions, trending topics
@@ -33,7 +33,6 @@ export GITHUB_TOKEN="your_token_here"
 - **Stack Overflow** - Q&A, trending questions
 - **Lobste.rs** - Curated tech discussions
 - **Indie Hackers** - Startup insights and discussions
-- **OpenAI Community** - AI/ML discussions
 
 #### AI/ML Research
 - **ArXiv** - Academic papers and preprints
@@ -106,9 +105,6 @@ stories = hn.get_top_stories(limit=30)
 2. **Full research**: `python3 research_demo.py`
    - Comprehensive topic research with all sources
    - Includes comment extraction and content fetching
-
-3. **Timestamp demo**: `python3 datetime_enhanced_scraper.py`
-   - Demonstrates consistent datetime handling
 
 ### Output Format
 

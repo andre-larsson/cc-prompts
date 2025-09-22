@@ -9,7 +9,6 @@ from typing import List, Dict, Optional
 import re
 from urllib.parse import urljoin
 from scraper import WebScraper, HackerNewsScraper, RedditScraper, GitHubTrendingScraper
-from openai_community_scraper import OpenAICommunityScrapser
 from additional_scrapers import DevToScraper, ArXivScraper, ProductHuntScraper, PapersWithCodeScraper, LobstersScraper
 from additional_scrapers_v2 import StackOverflowScraper, HuggingFaceScraper, HashnodeScraper, TechCrunchScraper, AngelListScraper
 from additional_scrapers_v3 import KaggleScraper, IndieHackersScraper, TheVergeScraper, ArsTechnicaScraper, PyPIScraper, NPMScraper
@@ -324,7 +323,7 @@ class ResearchAggregator:
         self.hn = EnhancedHackerNewsScraper()
         self.reddit = EnhancedRedditScraper()
         self.github = GitHubTrendingScraper()
-        self.openai = OpenAICommunityScrapser()
+        # OpenAI Community scraper removed (was in separate file)
         self.devto = DevToScraper()
         self.arxiv = ArXivScraper()
         # self.producthunt = ProductHuntScraper()  # BLOCKED - 403
@@ -386,19 +385,7 @@ class ResearchAggregator:
             post_with_comments = self.reddit.get_post_with_comments(top_post['permalink'])
             research['sources']['reddit']['top_post_with_comments'] = post_with_comments
 
-        # OpenAI Community research
-        print("\n💡 Searching OpenAI Community...")
-        openai_topics = self.openai.search_topics(topic, order='latest')[:10]
-        research['sources']['openai_community'] = {
-            'topics': openai_topics,
-            'top_topic_with_replies': None
-        }
-
-        if openai_topics and get_comments:
-            top_topic = openai_topics[0]
-            print(f"   Getting replies for: {top_topic['title'][:60]}...")
-            full_topic = self.openai.get_topic_with_replies(top_topic['id'], limit=5)
-            research['sources']['openai_community']['top_topic_with_replies'] = full_topic
+        # OpenAI Community scraper removed (was in separate file)
 
         # GitHub search using API
         print("\n🔧 Searching GitHub...")

@@ -47,6 +47,8 @@ venv/
 env/
 *.egg-info/
 .Python
+test_env/
+__pycache__
 
 # Personal/local files
 *.local
