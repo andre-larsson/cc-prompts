@@ -21,6 +21,12 @@ Two text files:
 - **5-string bass format**: Standard B-E-A-D-G tuning
 - **Complete song structure**: From intro to outro with all sections labeled
 
+## Model Performance Note
+
+**Important**: Model performance varies by task:
+- **Chord progressions**: Work reasonably well with Opus
+- **Bass tablature**: Both Sonnet and Opus struggle - results tend to be either overly simplistic (plain root notes throughout) or inaccurate
+
 ## File Structure
 
 Each file includes:
