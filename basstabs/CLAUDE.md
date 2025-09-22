@@ -83,6 +83,31 @@ B|---------------------|---------------------|
 - Example: If playing Am chord but bass plays G note, write as Am/G
 
 
+## Generation Modes
+
+Choose the appropriate mode based on the quality and completeness of available source material:
+
+### Research-Based Mode (Default)
+Use when only partial or "main riff" bass tabs are found online:
+- **Section 1** still contains complete chord progression overview for entire song
+- **Section 2** contains ONLY the well-documented bass sections found during research
+- DO NOT create or fill in missing sections - show only what was actually found
+- Include clear labels indicating which sections are documented (e.g., "MAIN RIFF", "CHORUS ONLY", "VERSE PATTERN")
+- Add research note explaining which sections were available vs. missing
+- Useful when source tabs only show key riffs or main patterns rather than complete arrangements
+
+### Complete Transcription Mode
+Use when comprehensive, high-quality bass tabs are available for the entire song:
+- **Section 2** contains complete song transcription from beginning to end
+- All song sections are included (intro, verse, chorus, bridge, outro, etc.)
+- Missing sections are filled in with musically appropriate bass lines
+- Results in a playable transcription of the entire song
+
+### Mode Selection Criteria
+- **Use Research-Based Mode (Default)** when: Only partial tabs exist, main riffs/patterns only, or source material has significant gaps
+- **Use Complete Mode** when: Multiple high-quality complete tabs are found, or you can confidently transcribe missing sections
+- **Always specify the mode used** in the file header under "Generation Notes"
+
 ## Standard Workflow
 
 ### Default Process for New Tablature Requests
@@ -132,31 +157,36 @@ When asked to create bass tablature for any song, follow this standard workflow:
    - Update key signature to reflect actual recorded pitch (not capo key)
    - Normalise tablature to the standard 5-string bass tuning (B-E-A-D-G)
 
-3. **Generate Original Transcription**
-   - **CRITICAL: Accurately transcribe the EXACT bass patterns from popular online tabs - including ALL octave jumps, chromatic runs, fills, and rhythmic variations. Simple quarter-note root patterns are ONLY acceptable if that's what the source tabs actually show.**
+3. **Generate Research-Based Transcription (Default)**
+   - **Use Research-Based Mode unless explicitly requested otherwise**
+   - **CRITICAL: Accurately transcribe ONLY the EXACT bass patterns found in online tabs - including ALL octave jumps, chromatic runs, fills, and rhythmic variations**
+   - **DO NOT fill in missing sections or create new bass lines**
    - Preserve all playing techniques, fingering positions, and performance notes from source tabs
-   - Start with chord progression overview, then create detailed bass tablature
+   - Start with chord progression overview, then create detailed bass tablature for documented sections only
    - **Use 4-bar layout**: 84 characters wide (4 measures × 21 characters each)
-   - Follow original song structure and apply formatting standards
-   - Save as `artist_songname.txt`
+   - Clearly label which sections are documented (e.g., "MAIN RIFF", "CHORUS ONLY")
+   - Include research notes explaining what sections were found vs. missing
+   - Save as `results/artist_songname.txt`
 
 4. **Review and Quality Check**
    - Verify tablature formatting and alignment
    - Check tablature alignment and fret positions
    - Ensure measure boundaries align across all strings
-   - Confirm all sections are properly labeled
+   - Confirm all documented sections are properly labeled
+   - Verify that no undocumented sections were added
    - Make any musical corrections in the .txt file
 
-5. **Creative Interpretation (Claude Version)**
-   - After completing the original transcription, create an alternate bass arrangement
-   - Save as `artist_songname_claude.txt`
+5. **Creative Interpretation (Optional - Only When Requested)**
+   - **DO NOT create Claude versions by default**
+   - Only create when user explicitly requests creative interpretation
+   - Save as `results/artist_songname_claude.txt`
    - **Begin with comprehensive musical analysis before tablature:**
      - Analyze harmonic progression and key modulations
      - Identify rhythmic patterns and groove characteristics
      - Discuss melodic opportunities and counterpoint possibilities
      - Explain creative choices and arrangement decisions
      - Detail specific techniques to be employed (walking bass, ostinatos, etc.)
-   - Fill in missing bass parts if none were found online, or create alternate interpretation
+   - Fill in missing bass parts or create alternate interpretation
    - Design musical bass lines that complement the song's style and feel
    - Include different approaches: walking bass, melodic counterpoint, rhythmic variations
    - Maintain the original chord progression but explore creative bass movement
@@ -164,11 +194,18 @@ When asked to create bass tablature for any song, follow this standard workflow:
 
 ## File Naming Convention
 
-All generated tablature files must be saved using the format:
+**CRITICAL: All generated tablature files must be saved in the `results/` folder.**
+
+Generated tablature files must be saved using the format:
 ```
-artist_songname.txt          (original transcription)
-artist_songname_claude.txt   (creative interpretation)
+results/artist_songname.txt          (research-based transcription - default)
+results/artist_songname_claude.txt   (creative interpretation - optional, only when requested)
 ```
+
+**File Path Requirements:**
+- Always save files to `results/` directory
+- Create the `results/` directory if it doesn't exist
+- Use the exact naming convention shown above within the results folder
 
 
 ## Output File Formatting
@@ -179,6 +216,7 @@ To ensure proper display and formatting of generated tablature files:
 Every generated .txt file should start with this comprehensive header containing:
 - **Metadata**: Artist, Song, Album, Year, Musicians, Bass Player, Producer, Label
 - **Song Information**: Style, Tuning (Standard 5-string B-E-A-D-G), Tempo, Key, Time Signature, Length
+- **Generation Notes**: Specify mode used (Complete Transcription Mode / Research-Based Mode) and rationale
 - **Song Analysis**: Brief description of musical characteristics, bass playing style, and notable techniques
 - **Bass Player Profile**: One paragraph about their musical background, other recordings, and playing style
 - **Sources**: Primary sources, research notes, and original transcriber credit
