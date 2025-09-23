@@ -1,7 +1,7 @@
-# Bass Tabs Generator - Simple Instructions
+# Song Chord Progression Generator (with optional Bass Tabs)
 
 ## Your Job
-Create accurate bass tablature for songs by researching existing tabs online and formatting them properly.
+Research and create accurate chord progressions for songs. Only create bass tablature if explicitly requested.
 
 ## PRIORITY: Accuracy Over Everything
 
@@ -99,9 +99,9 @@ Before saving any transcription, verify:
 ### Step 3: Transcribe What You Found
 1. **Label chords from your chord research** - NOT from bass notes
 2. **Include slash chords when bass note differs from root** - e.g., C/G for C major with G in bass, Am/F for A minor with F in bass
-3. **Use Research-Based Mode** (default) - transcribe the bass patterns that you found
-4. **Review chord progression and tabs** - if its a famous song where you are sure of the actual chord progression, verify that transcription is correct, sometimes research finds the wrong or too generic tabs
-5. **Convert to 5-string bass format** (B-E-A-D-G tuning)
+3. **DEFAULT: Create chord progressions only** - just the chords for each section
+4. **Review chord progression** - if its a famous song where you are sure of the actual chord progression, verify that transcription is correct
+5. **ONLY if user asks for "bass tabs" or "tablature"**: Include bass patterns in 5-string format (B-E-A-D-G tuning)
 6. **Include only documented sections** - don't fill in gaps
 
 ### Step 4: Save and Verify
@@ -127,22 +127,41 @@ Before saving any transcription, verify:
 
 ## File Format (Keep It Simple By Default)
 
-### DEFAULT: Simple Format (unless otherwise instructed)
+### DEFAULT: Simple Format - CHORD PROGRESSION ONLY
 
 Your output file should have **MINIMAL** information:
 
 1. **Brief Header**: Artist, song title, key (e.g., "Key: C Major" or "Key: A minor"), tempo
-2. **Section 1**: Basic chord progression
-3. **Section 2**: Bass tablature (only what you found)
+2. **Chord Progression**: Basic chord progression for all sections
 
-**DO NOT include** (unless specifically requested):
+**DO NOT include BY DEFAULT** (unless specifically requested):
+- Section 2 (Detailed bass tablature) - ONLY include if user explicitly asks for "bass tabs" or "tablature"
 - Detailed metadata (album, year, musicians, producer, label)
 - Song analysis paragraphs
 - Bass player profiles
 - Extended performance notes
 - Detailed legends
 
-Use 5-string format (B-E-A-D-G):
+**Example of DEFAULT output (chords only):**
+```
+Artist: The Beatles
+Song: Let It Be
+Key: C Major
+Tempo: 72 BPM
+
+INTRO (4 bars):
+| C     | G     | Am    | F     |
+
+VERSE (8 bars):
+| C     | G     | Am    | F     |
+| C     | G     | F  C  | C     |
+
+CHORUS (8 bars):
+| Am    | G     | F     | C     |
+| G     | F     | C     | C     |
+```
+
+**ONLY if user explicitly requests bass tabs**, include Section 2 with 5-string format (B-E-A-D-G):
 ```
 G|---------------------|
 D|---------------------|

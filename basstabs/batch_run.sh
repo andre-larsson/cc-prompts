@@ -55,7 +55,7 @@ while IFS= read -r song || [ -n "$song" ]; do
     formatted_number=$(printf "%02d" "$line_number")
 
     # Run claude command for each song with numbered filename instruction
-    claude -p "create a bass tab for $song and save it with filename starting with ${formatted_number}_ (e.g., results/${formatted_number}_artist_songname.txt)" --model "$MODEL" --allowed-tools "Bash,Read,Write,Search,WebSearch,WebFetch,Fetch,Update,Edit" > "logs/log_${line_number}.log"
+    claude -p "create chord progression for $song and save it with filename starting with ${formatted_number}_ (e.g., results/${formatted_number}_artist_songname.txt)" --model "$MODEL" --allowed-tools "Bash,Read,Write,Search,WebSearch,WebFetch,Fetch,Update,Edit" > "logs/log_${line_number}.log"
 
     if [ $? -eq 0 ]; then
         echo "[$line_number] ✓ Completed: $song"
@@ -78,15 +78,34 @@ echo "========================================"
 echo "Batch processing complete!"
 echo "Check individual log files: logs/log_*.log"
 echo "----------------------------------------"
-echo "Creating song summary list..."
+echo "Creating song list..."
 
-# Create a summary of all processed songs
-claude -p "Look at all the .txt files in the results/ folder and create a summary file called 'results/00_song_summary.txt' that lists all the songs with the following format for each line: [song number from filename] - Song Name by Artist (Year) - Key: [key]. Sort by the song number. Include a header 'SONG SUMMARY LIST' and today's date at the top." --model "$MODEL" --allowed-tools "Bash,Read,Write,Glob" > "logs/summary_generation.log"
+# Create a simple numbered list of all processed songs
+claude -p "Look at all the .txt files in the results/ folder and create a summary file called 'results/00_song_list.txt' that lists all the songs with the following format for each line: [song number from filename] - Song Name by Artist. Sort by the song number. Include a header 'SONG LIST' and today's date at the top." --model "$MODEL" --allowed-tools "Bash,Read,Write,Glob" > "logs/list_generation.log"
 
 if [ $? -eq 0 ]; then
-    echo "✓ Summary file created: results/00_song_summary.txt"
+    echo "✓ Song list created: results/00_song_list.txt"
 else
-    echo "✗ Failed to create summary file. Check logs/summary_generation.log"
+    echo "✗ Failed to create song list. Check logs/list_generation.log"
+fi
+
+echo "----------------------------------------"
+echo "Creating comprehensive chord progression summary..."
+
+# Create a comprehensive summary with all chord progressions
+claude -p "Look at all the .txt files in the results/ folder (except 00_* files) and create a comprehensive summary file called 'results/00_chord_progressions.txt' with the following:
+1. A header 'COMPLETE CHORD PROGRESSION SUMMARY' and today's date
+2. For each song (sorted by the number in the filename):
+   - Song number and name (e.g., '01. Song Name by Artist')
+   - Key signature
+   - Full chord progression for each section (INTRO, VERSE, CHORUS, BRIDGE, etc.)
+   - A blank line between songs
+Make sure to include ALL sections and chord progressions exactly as they appear in the individual files." --model "$MODEL" --allowed-tools "Bash,Read,Write,Glob" > "logs/chord_summary_generation.log"
+
+if [ $? -eq 0 ]; then
+    echo "✓ Chord progression summary created: results/00_chord_progressions.txt"
+else
+    echo "✗ Failed to create chord progression summary. Check logs/chord_summary_generation.log"
 fi
 
 echo "========================================"
