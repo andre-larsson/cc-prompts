@@ -15,11 +15,9 @@ Before saving any transcription, verify:
 4. ✓ Does the pattern have musical variety (not just 2-2-2-2-2)?
 5. ✓ Did you verify against known patterns? (e.g., "Come As You Are" = 0-0-1-2)
 
-**If unsure about accuracy, ALWAYS do more research rather than guess.**
-
 ## Simple 4-Step Process
 
-### Step 1: Research (MANDATORY)
+### Step 1: Research
 1. **Use WebSearch** for "[song name] bass tab" AND "[song name] chord progression"
 2. **Find chord charts separately** from bass tabs (Ultimate Guitar, Chordify, etc.)
 3. **Look for consensus** - if 3+ sources agree on a pattern, it's probably right
@@ -99,11 +97,12 @@ Before saving any transcription, verify:
 - **Modern**: Mix of all patterns, genre-dependent
 
 ### Step 3: Transcribe What You Found
-1. **Use Research-Based Mode** (default) - only transcribe patterns you actually found
-2. **Identify which pattern type** from above list
-3. **Convert to 5-string bass format** (B-E-A-D-G tuning)
-4. **Label chords from your research** - NOT from bass notes
-5. **Include only documented sections** - don't fill in gaps
+1. **Label chords from your chord research** - NOT from bass notes
+2. **Include slash chords when bass note differs from root** - e.g., C/G for C major with G in bass, Am/F for A minor with F in bass
+3. **Use Research-Based Mode** (default) - transcribe the bass patterns that you found
+4. **Review chord progression and tabs** - if its a famous song where you are sure of the actual chord progression, verify that transcription is correct, sometimes research finds the wrong or too generic tabs
+5. **Convert to 5-string bass format** (B-E-A-D-G tuning)
+6. **Include only documented sections** - don't fill in gaps
 
 ### Step 4: Save and Verify
 1. **Save as:** `results/artist_songname.txt`
@@ -122,18 +121,26 @@ Before saving any transcription, verify:
 - **Bass note = chord name** (bass often plays 3rds, 5ths, not just roots)
 
 ### Common Mistakes:
-- Guessing instead of researching
 - Creating patterns that "seem right" but aren't in the actual song
 - Determining chords from bass notes alone
-- Adding creative fills when doing research-based mode
+- Repeating one chord or bass note throughout song when actual song is more varied
 
-## File Format (Keep It Simple)
+## File Format (Keep It Simple By Default)
 
-Your output file should have:
+### DEFAULT: Simple Format (unless otherwise instructed)
 
-1. **Header**: Song info, key, tempo, sources
-2. **Section 1**: Chord progression overview (entire song structure)
-3. **Section 2**: Detailed bass tablature (only documented sections)
+Your output file should have **MINIMAL** information:
+
+1. **Brief Header**: Artist, song title, key (e.g., "Key: C Major" or "Key: A minor"), tempo
+2. **Section 1**: Basic chord progression
+3. **Section 2**: Bass tablature (only what you found)
+
+**DO NOT include** (unless specifically requested):
+- Detailed metadata (album, year, musicians, producer, label)
+- Song analysis paragraphs
+- Bass player profiles
+- Extended performance notes
+- Detailed legends
 
 Use 5-string format (B-E-A-D-G):
 ```
@@ -145,11 +152,11 @@ B|---------------------|
   Am
 ```
 
-## Additional References (if needed)
+## Additional References
 
-For detailed formatting: see @instructions/formatting.md
-For technical details: see @instructions/technical-details.md
-For creative mode (only if requested): see @instructions/creative-mode.md
+For technical details (conversion, transposition, symbols): see @instructions/technical-details.md
+If instructed to use detailed formatting (must be explicitly requested): see @instructions/formatting.md
+For creative mode (only if explicitly requested): see @instructions/creative-mode.md
 
 ---
 

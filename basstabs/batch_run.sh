@@ -51,8 +51,11 @@ while IFS= read -r song || [ -n "$song" ]; do
 
     echo "[$line_number] Processing: $song"
 
-    # Run claude command for each song (skip creating claude version)
-    claude -p "create a bass tab for $song" --model "$MODEL" --allowed-tools "Bash,Read,Write,Search,WebSearch,WebFetch,Fetch,Update,Edit" > "logs/log_${line_number}.log"
+    # Format line number with leading zero (01, 02, etc.)
+    formatted_number=$(printf "%02d" "$line_number")
+
+    # Run claude command for each song with numbered filename instruction
+    claude -p "create a bass tab for $song and save it with filename starting with ${formatted_number}_ (e.g., results/${formatted_number}_artist_songname.txt)" --model "$MODEL" --allowed-tools "Bash,Read,Write,Search,WebSearch,WebFetch,Fetch,Update,Edit" > "logs/log_${line_number}.log"
 
     if [ $? -eq 0 ]; then
         echo "[$line_number] ✓ Completed: $song"
@@ -74,3 +77,16 @@ mv "$TEMP_FILE" "$SONGS_FILE"
 echo "========================================"
 echo "Batch processing complete!"
 echo "Check individual log files: logs/log_*.log"
+echo "----------------------------------------"
+echo "Creating song summary list..."
+
+# Create a summary of all processed songs
+claude -p "Look at all the .txt files in the results/ folder and create a summary file called 'results/00_song_summary.txt' that lists all the songs with the following format for each line: [song number from filename] - Song Name by Artist (Year) - Key: [key]. Sort by the song number. Include a header 'SONG SUMMARY LIST' and today's date at the top." --model "$MODEL" --allowed-tools "Bash,Read,Write,Glob" > "logs/summary_generation.log"
+
+if [ $? -eq 0 ]; then
+    echo "✓ Summary file created: results/00_song_summary.txt"
+else
+    echo "✗ Failed to create summary file. Check logs/summary_generation.log"
+fi
+
+echo "========================================"
